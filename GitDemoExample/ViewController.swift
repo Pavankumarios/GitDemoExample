@@ -16,6 +16,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func nextButtonAction(_ sender: Any) {
+        let screenObj = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MenuViewController") as! MenuViewController
+        self.navigationController?.pushViewController(screenObj, animated: true)
+    }
+    
 }
 
