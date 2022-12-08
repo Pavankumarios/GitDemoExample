@@ -22,13 +22,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brv-LU-9SB">
+                                <rect key="frame" x="176" y="460" width="41" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1NI-vE-Eug"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cdy-Ot-NHv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3Bi-zy-yML"/>
+                            <constraint firstItem="brv-LU-9SB" firstAttribute="centerX" secondItem="cdy-Ot-NHv" secondAttribute="centerX" id="DD5-tM-LhW"/>
                             <constraint firstItem="cdy-Ot-NHv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="MVD-XE-iKm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cdy-Ot-NHv" secondAttribute="trailing" constant="20" id="MgJ-Vw-N6S"/>
+                            <constraint firstItem="brv-LU-9SB" firstAttribute="top" secondItem="cdy-Ot-NHv" secondAttribute="bottom" constant="170.33333333333331" id="Mzc-Lo-VRJ"/>
                             <constraint firstItem="cdy-Ot-NHv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="npe-gg-Sfx"/>
                         </constraints>
                     </view>
@@ -41,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="933.58778625954199" y="4.9295774647887329"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="nO0-sY-u42">
             <objects>
-                <viewController id="Pmq-F5-sbs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="Pmq-F5-sbs" customClass="MenuViewController" customModule="GitDemoExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F0e-4Z-WYi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

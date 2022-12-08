@@ -13,10 +13,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+    }
+
+    @IBAction func nextButtonAction(_ sender: Any) {
+        
         let screenObj = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MenuViewController") as! MenuViewController
         self.navigationController?.pushViewController(screenObj, animated: true)
     }
-
-
+    
 }
 
